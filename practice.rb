@@ -8,6 +8,7 @@ response = Net::HTTP.get(uri)
 weather_data = JSON.parse(response)
 # ----------------------
 
+
 # EXERCISE
 # Using the Ruby hash `weather_data` that includes weather forecast data for Chicago,
 # write a weather summary out to the screen including the current conditions and upcoming forecast.
@@ -42,3 +43,4 @@ weather_data = JSON.parse(response)
 # city = gets.chomp
 # puts city
 # Note: what happens if the user-entered value is not a known city? You'll want to do some error handling.
+weather_data.keys
